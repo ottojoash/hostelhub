@@ -1,12 +1,9 @@
-import {View, Text} from 'react-native'
-import React from 'react'
+import {View, Text, TouchableOpacity, TextInput,StyleSheet} from 'react-native'
+import React, {useState} from 'react'
+import { firebase} from '../config'
 
 const Register = () => {
-    return(
-        <View>
-            <Text>Register</Text>
-        </View>
-    )    
+    
 }
 
 export default Register
