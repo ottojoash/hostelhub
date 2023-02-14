@@ -39,19 +39,48 @@ function App(){
               height:150,
               borderBottomLeftRadius:50,
               borderBottomRightRadius:50,
-              backgroundColor:'purple',
-              shadowColor: '#808',
+              backgroundColor:'#00e4d0',
+              shadowColor: '#000',
               elevation:25
             }
           }}
           />
+          <Stack.Screen
+                 name = 'Register'
+                 component = {Register}
+                 options={{
+                   headerTitles : () => <Header name ='Hostel Hub'/>,
+                   headerStyle:{
+                     height:150,
+                     borderBottomLeftRadius:50,
+                     borderBottomRightRadius:50,
+                     backgroundColor:'#00e4d0',
+                     shadowColor: '#000',
+                     elevation:25
+                   }
+                 }}
+                 />
 
       </Stack.Navigator>
     );
   }
   return(
     <Stack.Navigator>
-      
+      <Stack.Screen
+             name = 'Dashboard'
+             component = {Dashboard}
+             options={{
+               headerTitles : () => <Header name ='Welcome to Hostel hub'/>,
+               headerStyle:{
+                 height:150,
+                 borderBottomLeftRadius:50,
+                 borderBottomRightRadius:50,
+                 backgroundColor:'#00e4d0',
+                 shadowColor: '#000',
+                 elevation:25
+               }
+             }}
+             />
     </Stack.Navigator>
   )
 
