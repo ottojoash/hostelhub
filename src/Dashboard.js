@@ -1,5 +1,6 @@
-import {View, Text} from 'react-native'
-import React from 'react'
+import {View, Text,StyleSheet,SafeAreaView} from 'react-native'
+import React, {useState,useEffect} from 'react'
+import {firebase} from '../config'
 
 const Dashboard = () => {
     return(
