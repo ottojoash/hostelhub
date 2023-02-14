@@ -49,7 +49,9 @@ const Login = () => {
                 onPress={() => navigation.navigate('Register') }
                 style ={{marginTop:20}}
 
-                <Text style= {{fontWeight:'bold', fontSize:22}}>Login</Text>
+                <Text style= {{fontWeight:'bold', fontSize:16}}>
+                    Dont have an account? Register Now
+                </Text>
             </TouchableOpacity>
         </View>
     )
@@ -57,3 +59,6 @@ const Login = () => {
 }
 
 export default Login
+
+
+const styles = 
