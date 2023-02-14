@@ -30,7 +30,14 @@ function App(){
   if(!user){
     return(
       <Stack.Navigator>
-        
+        <Stack.Screen
+          name = 'Login'
+          component = {Login}
+          options={{
+            headerTitles : () => <Header name ='Login'/>
+          }}
+          />
+  
       </Stack.Navigator>
     )
   }
