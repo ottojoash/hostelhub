@@ -22,9 +22,29 @@ const Login = () => {
             <Text style ={{fontWeight: 'bold', fontSize:26}}>
                 Login
             </Text>
-            <View>
-                
+            <View style = {{marginTop:40}}>
+                <TextInput
+                style={StyleSheet.textInput}
+                placeholder='email'
+                onChange={(email)=> setEmail(email)}
+                autoCapitalize='none'
+                autoCorrect={false}
+                />
+                <TextInput
+                style={StyleSheet.textInput}
+                placeholder='Password'
+                onChange={(password)=> setEmail(password)}
+                autoCapitalize='none'
+                autoCorrect={false}
+                secureTextEntry={true}
+                />
             </View>
+            <TouchableOpacity>
+                onPress={() => loginUser(email, password) }
+                style ={styles.button}
+
+                <Text style= {{fontWeight:'bold', fontSize:22}}
+            </TouchableOpacity>
         </View>
     )
     
