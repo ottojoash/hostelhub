@@ -82,6 +82,15 @@ function App(){
              }}
              />
     </Stack.Navigator>
-  )
+  );
 
+
+}
+
+export default() => {
+  return(
+    <NavigationContainer>
+        <App />
+    </NavigationContainer>
+  )
 }
