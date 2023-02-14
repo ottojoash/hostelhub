@@ -59,8 +59,21 @@ const Register = () => {
                     autoCapitalize='none'
                     autoCorrect={false}
                     keyboardType='email-address'
-                />  
+                /> 
+                <TextInput
+                    style={styles.textInput}
+                    placeholder = 'Password'
+                    onChange={(password)=> setFirstName(password)}
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    secureTextEntry={true}
+                /> 
             </View>
+            <TouchableOpacity
+                onPress={() => registerUser(email,password,firstname,lastname)}
+                style = {styles.button}
+            >
+            </TouchableOpacity>
         </View>
     )
 }
