@@ -11,7 +11,7 @@ const Login = () => {
 
     loginUser =  async(email , password) =>  {
         try{
-            
+            await firebase.auth().signInWithEmailAndPassword(email, password)
         }
     }
     
