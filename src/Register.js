@@ -45,7 +45,13 @@ const Register = () => {
                     placeholder = 'First Name'
                     onChange={(firstname)=> setFirstName(firstname)}
                     autoCorrect={false}
-                />    
+                />
+                <TextInput
+                    style={styles.textInput}
+                    placeholder = 'Last Name'
+                    onChange={(firstname)=> setFirstName(firstname)}
+                    autoCorrect={false}
+                />   
             </View>
         </View>
     )
