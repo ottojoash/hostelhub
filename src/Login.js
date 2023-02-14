@@ -17,6 +17,9 @@ const Login = () => {
         }
     }
 
+    // forgot password
+    
+
     return(
         <View  style={style.container}>
             <Text style ={{fontWeight: 'bold', fontSize:26}}>
