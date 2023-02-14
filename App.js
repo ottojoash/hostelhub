@@ -34,7 +34,7 @@ function App(){
           name = 'Login'
           component = {Login}
           options={{
-            headerTitles : () => <Header name ='Login'/>
+            headerTitles : () => <Header name ='Hostel Hub'/>
           }}
           />
   
