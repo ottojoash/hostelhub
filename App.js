@@ -34,11 +34,25 @@ function App(){
           name = 'Login'
           component = {Login}
           options={{
-            headerTitles : () => <Header name ='Hostel Hub'/>
+            headerTitles : () => <Header name ='Hostel Hub'/>,
+            headerStyle:{
+              height:150,
+              borderBottomLeftRadius:50,
+              borderBottomRightRadius:50,
+              backgroundColor:'purple',
+              shadowColor: '#808',
+              elevation:25
+            }
           }}
           />
-  
+
       </Stack.Navigator>
-    )
+    );
   }
+  return(
+    <Stack.Navigator>
+      
+    </Stack.Navigator>
+  )
+
 }
