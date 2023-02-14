@@ -43,7 +43,13 @@ const Login = () => {
                 onPress={() => loginUser(email, password) }
                 style ={styles.button}
 
-                <Text style= {{fontWeight:'bold', fontSize:22}}
+                <Text style= {{fontWeight:'bold', fontSize:22}}>Login</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                onPress={() => navigation.navigate('Register') }
+                style ={{marginTop:20}}
+
+                <Text style= {{fontWeight:'bold', fontSize:22}}>Login</Text>
             </TouchableOpacity>
         </View>
     )
