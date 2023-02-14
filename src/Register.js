@@ -49,9 +49,17 @@ const Register = () => {
                 <TextInput
                     style={styles.textInput}
                     placeholder = 'Last Name'
-                    onChange={(firstname)=> setFirstName(firstname)}
+                    onChange={(lastname)=> setFirstName(lastname)}
                     autoCorrect={false}
-                />   
+                /> 
+                <TextInput
+                    style={styles.textInput}
+                    placeholder = 'Email'
+                    onChange={(email)=> setFirstName(email)}
+                    autoCapitalize='none'
+                    autoCorrect={false}
+                    keyboardType='email-address'
+                />  
             </View>
         </View>
     )
