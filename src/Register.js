@@ -36,9 +36,17 @@ const Register = () => {
     }
     return (
         <View style={StyleSheet.container}>
-            <Text>
+            <Text style={{fontWeight:'bold', fontSize:23}}>
                 Register Here..!!
             </Text>
+            <View style={{marginTop:40}}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder = 'First Name'
+                    onChange={(firstname)=> setFirstName(firstname)}
+                    autoCorrect={false}
+                />    
+            </View>
         </View>
     )
 }
