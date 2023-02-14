@@ -17,9 +17,30 @@ const Register = () => {
             })
             .then(() =>{
                 alert('Verification email sent')
-            }).catch((error))
+            }).catch((error)=>{
+                alert(error.message)
+            })
+            .then(()=>{
+                firebase.firestore().collection('users')
+                .doc(firebase.auth().currentUser.uid)
+                .set({
+                    firstname,
+                    lastname,
+                    email,
+                })
+            })
+            .catch((error =>{
+                alert(error.message)
+            }))
         })
     }
+    return (
+        <View style={StyleSheet.container}>
+            <Text>
+                Register Here..!!
+            </Text>
+        </View>
+    )
 }
 
 export default Register
