@@ -13,8 +13,11 @@ const Register = () => {
         .then(()=>{
             firebase.auth().currentUser.sendEmailVerification({
                 handleCodeInApp:true,
-                url=''
+                url:'https://hostelhub-fdaca.firebaseapp.com',
             })
+            .then(() =>{
+                alert('Verification email sent')
+            }).catch((error))
         })
     }
 }
