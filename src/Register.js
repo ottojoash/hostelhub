@@ -9,7 +9,13 @@ const Register = () => {
     const [lastname, setLastName] = useState('')
 
     registerUser = async (email, password, firstname, lastname)=> {
-        
+        await firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(()=>{
+            firebase.auth().currentUser.sendEmailVerification({
+                handleCodeInApp:true,
+                url=''
+            })
+        })
     }
 }
 
