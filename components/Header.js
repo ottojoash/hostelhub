@@ -3,9 +3,11 @@ import React from 'react'
 
 const Header =(props) =>{
     return(
-        <view style = {{marginLeft:15}}>
-            <Text>Header</Text>
-        </view>
+        <View style = {{marginLeft:15}}>
+            <Text style = {{fontWeight:'bold', fontSize:28}}>
+                {props.name}
+            </Text>
+        </View>
     )
 }
 
