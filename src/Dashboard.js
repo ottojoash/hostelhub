@@ -11,9 +11,9 @@ const Dashboard = () => {
         firebase.auth().sendPasswordResetEmail(firebase.auth().currentUser.email)
         .then(()=>{
             alert('password reset email sent')
-        }).catch(error) => {
-            
-        }
+        }).catch((error) => {
+            alert(error)
+        })
     }
     
     useEffect(()=>{
