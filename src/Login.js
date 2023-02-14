@@ -16,6 +16,17 @@ const Login = () => {
             alert(error.message)
         }
     }
+
+    return(
+        <View  style={style.container}>
+            <Text style ={{fontWeight: 'bold', fontSize:26}}>
+                Login
+            </Text>
+            <View>
+                
+            </View>
+        </View>
+    )
     
 }
 
