@@ -4,7 +4,10 @@ import {firebase} from '../config'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const Dashboard = () => {
-    const [name, setName] = useState('')
+    const [name, setName] = useState([]);
+
+    // Change password
+    
     
     useEffect(()=>{
         firebase.firestore().collection('users')
