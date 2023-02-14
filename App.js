@@ -8,4 +8,20 @@ import Register from './src/Register';
 import Dashboard from './src/Dashboard';
 import Header from "./components/Header";
 
-const Stack
+const Stack = createStackNavigator();
+
+function App(){
+  const [initializing, setInitializing] = useState(true);
+  const [user,setUser] = useState();
+
+  //handler user changes
+  function onAuthStateChanged(user){
+    setUser(user);
+    if(initializing) setInitializing(false);
+  }
+
+  useEffect(()=>{
+    const subscriber = firebase.auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber
+  })
+}
