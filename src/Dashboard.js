@@ -7,7 +7,14 @@ const Dashboard = () => {
     const [name, setName] = useState([]);
 
     // Change password
-    
+    const changePassword = () =>{
+        firebase.auth().sendPasswordResetEmail(firebase.auth().currentUser.email)
+        .then(()=>{
+            alert('password reset email sent')
+        }).catch(error) => {
+            
+        }
+    }
     
     useEffect(()=>{
         firebase.firestore().collection('users')
