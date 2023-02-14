@@ -23,5 +23,15 @@ function App(){
   useEffect(()=>{
     const subscriber = firebase.auth().onAuthStateChanged(onAuthStateChanged);
     return subscriber
-  })
+  },[]);
+
+  if(initializing) return null;
+
+  if(!user){
+    return(
+      <Stack.Navigator>
+        
+      </Stack.Navigator>
+    )
+  }
 }
