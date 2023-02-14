@@ -26,7 +26,7 @@ const Dashboard = () => {
                 Hello,{name.firstname}
             </Text>
             <TouchableOpacity
-                onPress={()=> firebase.auth().signOut()}
+                onPress={()=> {firebase.auth().signOut()}}
             >
                 <Text style={{fontSize:20,fontWeight:'bold'}}>
                     Sign Out
