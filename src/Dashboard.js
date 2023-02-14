@@ -39,6 +39,14 @@ const Dashboard = () => {
                 onPress={()=> {firebase.auth().signOut()}}
             >
                 <Text style={{fontSize:20,fontWeight:'bold'}}>
+                    Change password
+                </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={()=> {changePassword()}}
+            >
+                <Text style={{fontSize:20,fontWeight:'bold'}}>
                     Sign Out
                 </Text>
             </TouchableOpacity>
